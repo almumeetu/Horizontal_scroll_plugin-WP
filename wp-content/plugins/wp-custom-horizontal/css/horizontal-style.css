@@ -1,13 +1,13 @@
 /* Wp-custom-horizontal CSS */
-
   h2 {
     color: white;
     font-size: 3rem;
     margin: 2rem 1rem;
   }
   .slider {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 22%;
     gap: .3rem;
     overflow-x: auto;
     -ms-overflow-style: none;
@@ -15,21 +15,13 @@
     cursor: grab;
     margin-top: 5rem;
     padding-inline: 1rem;
-    overflow: hidden;
-}
-.pin-spacer
-{
-    padding: 0 !important;
-}
+  }
   .slider::-webkit-scrollbar {
     display: none;
   }
-  .slide {
-    height: 40vh !important;
-    width: 30%;
-    flex-grow: 0;
-    flex-shrink: 0;
-}
+  .slide{
+    
+  }
   .slide img {
     inline-size: 100%;
     aspect-ratio: 4 / 3;
