@@ -1,0 +1,47 @@
+/* Wp-custom-horizontal CSS */
+
+  h2 {
+    color: white;
+    font-size: 3rem;
+    margin: 2rem 1rem;
+  }
+  .slider {
+    display: flex;
+    flex-direction: row;
+    gap: .3rem;
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    cursor: grab;
+    margin-top: 5rem;
+    padding-inline: 1rem;
+    overflow: hidden;
+}
+.pin-spacer
+{
+    padding: 0 !important;
+}
+  .slider::-webkit-scrollbar {
+    display: none;
+  }
+  .slide {
+    height: 40vh !important;
+    width: 30%;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+  .slide img {
+    inline-size: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: .2rem;
+  }
+  @media (max-width: 440px) {
+    h2 {
+      font-size: 1.5rem;
+    }
+    .slider {
+      grid-auto-columns: 40%;
+    }
+  }
+  
